@@ -26,7 +26,7 @@ public class TasksHandler : MonoBehaviour
 
     private void ChangeDayTasks(int currentDay)
     {
-        if(currentDay != 6)
+        if(currentDay < 7)
         {
             _currentDayTasks = _dayTasks[currentDay - 1];
             _currentDayTasks.enabled = true;
