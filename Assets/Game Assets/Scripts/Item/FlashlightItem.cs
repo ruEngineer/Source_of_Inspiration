@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class FlashlightItem : MonoBehaviour, IInteractable
@@ -7,6 +8,8 @@ public class FlashlightItem : MonoBehaviour, IInteractable
 
     [SerializeField] private string _ruText;
     [SerializeField] private string _enText;
+
+    public event Action OnFlashlightTaking;
 
     public string GetInteractObjectName(string language)
     {
@@ -18,6 +21,7 @@ public class FlashlightItem : MonoBehaviour, IInteractable
 
     public void Interact()
     {
+        OnFlashlightTaking?.Invoke();
         _flashlightStateChanger.PickUpFlashlight();
         _takeSound.PlayOneShot(_takeSound.clip);
         Destroy(gameObject);

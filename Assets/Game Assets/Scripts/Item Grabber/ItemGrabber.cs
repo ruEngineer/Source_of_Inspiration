@@ -7,7 +7,7 @@ public class ItemGrabber : MonoBehaviour
     [SerializeField] private Transform _offsetPosition;
     private float _magnitPower = 18.0f;
     private float _throwPower = 5.0f;   
-    [SerializeField] private float _rayDistance = 2.5f;  
+    [SerializeField] private float _rayDistance = 1.5f;  
     private bool _isGrabbed = false;    
     private RaycastHit _hit;
 

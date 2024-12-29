@@ -16,7 +16,7 @@ public abstract class TasksBase : MonoBehaviour
 
     [SerializeField] private AudioSource _taskCompletedSound;
 
-    private float _percentOfDoneTask;
+    private protected float _percentOfDoneTask;
 
     public event Action<TasksBase> OnTaskCompleted;
     public event Action<float> OnTaskCompleting;

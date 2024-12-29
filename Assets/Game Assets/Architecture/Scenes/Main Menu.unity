@@ -8348,7 +8348,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.794, y: 0.023000002}
   m_AnchorMax: {x: 0.89900005, y: 0.16900001}
-  m_AnchoredPosition: {x: 0.08001709, y: -1.5200195}
+  m_AnchoredPosition: {x: 0.080078125, y: -1.5200195}
   m_SizeDelta: {x: -2, y: -6.720001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &939099979
@@ -9050,6 +9050,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1889408524448951612, guid: f607b2260fb28c343a8f1afe6bc6fe9a,
         type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1889408524448951612, guid: f607b2260fb28c343a8f1afe6bc6fe9a,
+        type: 3}
       propertyPath: m_BoundingSphereOverride.w
       value: 2.7908778e+29
       objectReference: {fileID: 0}
@@ -9117,6 +9122,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544038446732682803, guid: f607b2260fb28c343a8f1afe6bc6fe9a,
+        type: 3}
+      propertyPath: m_AdditionalLightsShadowResolutionTier
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

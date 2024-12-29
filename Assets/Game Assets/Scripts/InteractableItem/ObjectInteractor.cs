@@ -22,7 +22,7 @@ public class ObjectInteractor : MonoBehaviour
     private void Update()
     {
         _ray = _camera.ScreenPointToRay(Input.mousePosition);
-        if(Physics.Raycast(_ray, out _hit, 1.25f) && _hit.collider.TryGetComponent(out IInteractable interactable))
+        if(Physics.Raycast(_ray, out _hit, 1.5f) && _hit.collider.TryGetComponent(out IInteractable interactable))
         {       
             OnInteractWithObject?.Invoke(interactable.GetInteractObjectName(_language));
 
