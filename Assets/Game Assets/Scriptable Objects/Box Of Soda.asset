@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35167c3b96be0d5488ffe4c54eaf54a6, type: 3}
+  m_Name: Box Of Soda
+  m_EditorClassIdentifier: 
+  GoodsNameRu: "\u042F\u0449\u0438\u043A \"\u0417\u043B\u043E\u0439 \u043A\u043E\u043B\u044B\""
+  GoodsNameEn: Box of soda
+  GoodsIcon: {fileID: 21300000, guid: a27bff8ccdc150f4d9ffd7626a677abf, type: 3}
+  DayFromAvailable: 1
+  GoodsPrefab: {fileID: 7410981016789922070, guid: ed269ffb70b6ad94099a214bf25701c1,
+    type: 3}
