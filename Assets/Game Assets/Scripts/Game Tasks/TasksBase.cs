@@ -24,7 +24,7 @@ public abstract class TasksBase : MonoBehaviour
 
     private protected virtual void CompleteTask()
     {
-        if(_taskCompletedSound != null)
+        if(_taskCompletedSound != null && _taskCompletedSound.isPlaying == false)
         {
             _taskCompletedSound.Play();
         }

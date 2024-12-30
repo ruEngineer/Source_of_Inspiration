@@ -24,7 +24,7 @@ public class ResolutionSetter : MonoBehaviour
         _resolution = Screen.resolutions;
         foreach (var resolution in _resolution)
         {
-            _resolutions.Add(resolution.width +"x" + resolution.height);
+            _resolutions.Add($"{resolution.width} x {resolution.height}  {resolution.refreshRateRatio} Hz");
         }
         _dropdown.ClearOptions();
         _dropdown.AddOptions(_resolutions);

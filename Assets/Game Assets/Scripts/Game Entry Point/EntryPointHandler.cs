@@ -7,6 +7,7 @@ public class EntryPointHandler : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1;
         _gameDayHandler.Init();
 
         foreach(MarketItemSlot marketItemSlot in _marketSlots)

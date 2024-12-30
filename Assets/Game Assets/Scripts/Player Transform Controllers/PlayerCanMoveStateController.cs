@@ -5,9 +5,15 @@ public class PlayerCanMoveStateController : MonoBehaviour
 {
     [SerializeField] private SUPERCharacterAIO _character;
 
-    public void FreezePlayer() => 
-        _character.PausePlayer(PauseModes.FreezeInPlace);
+    private float _sensitivity;
 
-    public void UnfreezePlayer() =>
+    public void FreezePlayer()
+    {
+        _character.PausePlayer(PauseModes.FreezeInPlace);      
+    }
+
+    public void UnfreezePlayer()
+    {
         _character.UnpausePlayer();
+    }
 }

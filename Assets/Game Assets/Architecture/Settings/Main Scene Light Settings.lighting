@@ -17,8 +17,8 @@ LightingSettings:
   m_IndirectOutputScale: 1
   m_UsingShadowmask: 1
   m_BakeBackend: 2
-  m_LightmapMaxSize: 4096
-  m_BakeResolution: 50
+  m_LightmapMaxSize: 2048
+  m_BakeResolution: 40
   m_Padding: 2
   m_LightmapCompression: 3
   m_AO: 1
@@ -27,7 +27,7 @@ LightingSettings:
   m_CompAOExponentDirect: 0
   m_ExtractAO: 0
   m_MixedBakeMode: 2
-  m_LightmapsBakeMode: 1
+  m_LightmapsBakeMode: 0
   m_FilterMode: 1
   m_LightmapParameters: {fileID: 111300000, guid: 2eaa7cb9b79a2e94ea850cf885eeabd6,
     type: 2}
@@ -50,9 +50,9 @@ LightingSettings:
   m_PVRMinBounces: 2
   m_PVREnvironmentImportanceSampling: 1
   m_PVRFilteringMode: 1
-  m_PVRDenoiserTypeDirect: 3
-  m_PVRDenoiserTypeIndirect: 3
-  m_PVRDenoiserTypeAO: 3
+  m_PVRDenoiserTypeDirect: 2
+  m_PVRDenoiserTypeIndirect: 2
+  m_PVRDenoiserTypeAO: 2
   m_PVRFilterTypeDirect: 0
   m_PVRFilterTypeIndirect: 0
   m_PVRFilterTypeAO: 0

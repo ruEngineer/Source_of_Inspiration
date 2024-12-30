@@ -38,9 +38,14 @@ public class ItemGrabber : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (_isGrabbed == true)
+            if (_isGrabbed == true && _rigidbodyTakenObject != null)
             {
                 Throw();
+            }
+
+            else
+            {
+                _isGrabbed = false;
             }
         }  
 

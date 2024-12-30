@@ -1,13 +1,14 @@
 using UnityEngine;
 using DG.Tweening;
 using NaughtyAttributes;
+using TMPro;
 
 public class PCWebMarketEnabler : InteractableObject, IInteractable
 {
     [Foldout("Канвас")]
     [SerializeField] private Canvas _webMarketCanvas;
     [Foldout("Канвас")]
-    [SerializeField] private Canvas _playerCanvas;
+    [SerializeField] private TMP_Text _interactText;
     [Foldout("Канвас")]
     [SerializeField] private CanvasGroup _webMarketCanvasGroup;
 
@@ -33,7 +34,7 @@ public class PCWebMarketEnabler : InteractableObject, IInteractable
             _playerStateMoveController.FreezePlayer();
             _pcCamera.enabled = true;
             _webMarketCanvas.enabled = true;
-            _playerCanvas.enabled = false;
+            _interactText.enabled = false;
             _webMarketCanvasGroup.DOFade(1, 1.0f);
             _playerCamera.enabled = false;
             Cursor.lockState = CursorLockMode.None;
